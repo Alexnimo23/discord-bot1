@@ -598,4 +598,7 @@ async def supportersetup(ctx):
     await ctx.send(embed=embed, view=view)
 
 
-bot.run("BOT_TOKENINIZ_BURAYA")
+import os
+bot.run(os.getenv("TOKEN"))
+
+
